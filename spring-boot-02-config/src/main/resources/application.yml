@@ -1,0 +1,22 @@
+
+server:
+  port: 10001
+spring:
+  profiles:
+    active: prod
+---
+server:
+  port: 10002
+
+spring:
+  profiles: dev
+---
+
+server:
+  port: 10003
+
+spring:
+  profiles: prod
+
+#这里的三条-分割的是一个文档块
+#这里也可以在虚拟机里面设置虚拟机参数命令是: -Dspring.profiles.active=dev
